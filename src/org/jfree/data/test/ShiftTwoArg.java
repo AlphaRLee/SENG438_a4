@@ -26,10 +26,10 @@ public class ShiftTwoArg {
 	public void negToPosRangeZeroDelta()
 	{
 		final Range base = new Range( -1.2, 7.4 );
-		double delta = 3;
+		double delta = 0;
 		Range result = Range.shift( base, delta );
-		assertEquals( Double.compare( base.getLowerBound() + delta, result.getLowerBound() ), 0 );
-		assertEquals( Double.compare( base.getUpperBound() + delta, result.getUpperBound() ), 0 );
+		assertEquals( base.getLowerBound() + delta, result.getLowerBound(), 0.0001 );
+		assertEquals( base.getUpperBound() + delta, result.getUpperBound(), 0.0001 );
 	}
 	
 	@Test
