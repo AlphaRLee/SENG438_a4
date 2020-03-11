@@ -11,12 +11,9 @@
 	<classpathentry kind="lib" path="libs/cglib-nodep-2.1_3.jar"/>
 	<classpathentry kind="lib" path="libs/extendedOJ.jar"/>
 	<classpathentry kind="lib" path="libs/gnujaxp.jar"/>
-	<classpathentry kind="lib" path="libs/hamcrest-core-1.1.jar"/>
 	<classpathentry kind="lib" path="libs/hamcrest-library-1.1.jar"/>
 	<classpathentry kind="lib" path="libs/jcommon-1.0.0-rc1-cvs.jar"/>
 	<classpathentry kind="lib" path="libs/jcommon-1.0.5.jar"/>
-	<classpathentry kind="lib" path="libs/junit-old.jar"/>
-	<classpathentry kind="lib" path="libs/junit.jar"/>
 	<classpathentry kind="lib" path="libs/objenesis-1.0.jar"/>
 	<classpathentry kind="lib" path="libs/servlet.jar"/>
 	<classpathentry kind="lib" path="libs/jMock/jmock-2.5.1.jar"/>
@@ -24,5 +21,7 @@
 	<classpathentry kind="lib" path="libs/jMock/jmock-junit4-2.5.1.jar"/>
 	<classpathentry kind="lib" path="libs/jMock/jmock-legacy-2.5.1.jar"/>
 	<classpathentry kind="lib" path="libs/jMock/jmock-script-2.5.1.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.13.jar"/>
+	<classpathentry kind="lib" path="libs/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
