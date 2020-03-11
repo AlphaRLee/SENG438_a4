@@ -63,7 +63,7 @@ public class Constrain_Range {
 	public void OutOfBoundRange_smaller() {
 		Range controlBody = new Range(-2.125e307, 1.69e308);
 		double result = controlBody.constrain(-2.225e307);
-		double expected = -2.225e307;
+		double expected = -2.125e307;
 		System.out.println(expected);
 		System.out.println(result);
 		assertEquals(expected, result,0.0000001d);

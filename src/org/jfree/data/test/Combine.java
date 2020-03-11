@@ -27,7 +27,7 @@ public class Combine {
 		final Range base1 = new Range( -1.0, 1.0);
 		final Range base2 = null;
 		Range result = Range.combine( base1, base2 );
-		assertEquals( result, null );
+		assertEquals( result, base1 );
 	}
 	
 	@Test
