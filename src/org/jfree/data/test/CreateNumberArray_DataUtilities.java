@@ -26,47 +26,41 @@ public class CreateNumberArray_DataUtilities {
 	@Test
 	public void safe_array_of_four() 
 	{
-		Number [] expected = {1,2,3,4};
+		Number [] expected = {1.0,2.0,3.0,4.0};
 		double [] manipulate = {1,2,3,4};
 		Number [] actual = DataUtilities.createNumberArray(manipulate);
+		System.out.println("Tests");
 		assertArrayEquals("createNumberArray should create the correct value",expected,actual);
+		
 		
 	}
 	//Test a single array value (1 array cell)
 	@Test
 	public void array_Of_One()
 	{
-		Number [] expected = {6};
-		double [] manipulate = {6};
+		Number [] expected = {6.0};
+		double [] manipulate = {6.0};
 		Number [] actual = DataUtilities.createNumberArray(manipulate);
 		
 		assertArrayEquals("createNumberArray should create the correct value",expected,actual);
 	}
 	
 	//Test a empty array (should fail), may require changes done
-	@Test(expected = InvalidParameterException.class)
-	public void emptyArray() throws InvalidParameterException
+	@Test(expected = IllegalArgumentException.class)
+	//InvalidParameterException
+	public void emptyArray()
 	{
-		try 
-		{
 			double [] manipulate = null;
 			Number [] actual = DataUtilities.createNumberArray(manipulate);
-		}
-		
-		catch (Exception e)
-		{
-			//fail("Testing the InvalidParameterException");
-		}
-		
-		//fail("Testing the InvalidParameterException");
+	
 	}
 	
 	//Test an array with many values
 	@Test
 	public void veryBigArray()
 	{
-		Number [] expected = {1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4};
-		double [] manipulate = {1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4};
+		Number [] expected = {1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,5.0};
+		double [] manipulate = {1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,1.0,2.0,3.0,4.0,5.0};
 		Number [] actual = DataUtilities.createNumberArray(manipulate);
 		assertArrayEquals("createNumberArray should create the correct value",expected,actual);
 	}
@@ -75,8 +69,8 @@ public class CreateNumberArray_DataUtilities {
 	@Test
 	public void largeValues()
 	{
-		Number [] expected = {1.79e308,8,2};
-		double [] manipulate = {1.79e308,8,2};
+		Number [] expected = {1.79e308,8.0,2.0};
+		double [] manipulate = {1.79e308,8.0,2.0};
 		Number [] actual = DataUtilities.createNumberArray(manipulate);
 		assertArrayEquals("createNumberArray should create the correct value",expected,actual);
 	}
@@ -85,7 +79,7 @@ public class CreateNumberArray_DataUtilities {
 	//Test an array with a very small value stored
 	public void smallValues()
 	{
-		Number [] expected = {-2.225e307,-8,-2};
+		Number [] expected = {-2.225e307,-8.0,-2.0};
 		double [] manipulate = {-2.225e307,-8,-2};
 		Number [] actual = DataUtilities.createNumberArray(manipulate);
 		assertArrayEquals("createNumberArray should create the correct value",expected,actual);

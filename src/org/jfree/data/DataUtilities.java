@@ -109,7 +109,7 @@ public abstract class DataUtilities {
      *
      * @return An array of <code>Number</code> objects.
      */
-    public static Number[] createNumberArray(double[] data) {
+    public static Number[] createNumberArray(double[] data) throws IllegalArgumentException {
         if (data == null) {
             throw new IllegalArgumentException("Null 'data' argument.");   
         }
