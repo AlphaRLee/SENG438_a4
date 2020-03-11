@@ -140,7 +140,7 @@ public class GetCumulativePercentages_DataUtilities {
 			}
 		});
 		KeyedValues results = DataUtilities.getCumulativePercentages(values);
-		assertEquals(1, results.getValue(0));
+		assertEquals(1.0, results.getValue(0));
 	}
 	
 	/**
