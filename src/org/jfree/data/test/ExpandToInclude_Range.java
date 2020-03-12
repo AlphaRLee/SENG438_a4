@@ -37,7 +37,6 @@ public class ExpandToInclude_Range {
 		assertEquals(testRange.getLength(),actualRange.getLength(),0.0000001d);
 		
 	}
-	
 	/*
 	 * Testing if lower bound is returned correctly
 	 * 

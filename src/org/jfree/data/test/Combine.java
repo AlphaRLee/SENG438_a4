@@ -22,10 +22,37 @@ public class Combine {
 	}
 	
 	@Test
-	public void validNull()
+	public void validNullbase2()
 	{
 		final Range base1 = new Range( -1.0, 1.0);
 		final Range base2 = null;
+		Range result = Range.combine( base1, base2 );
+		assertEquals( result, base1 );
+	}
+	
+	@Test
+	public void validNullbase1()
+	{
+		final Range base1 = null;
+		final Range base2 = new Range( -1.0, 1.0);
+		Range result = Range.combine( base1, base2 );
+		assertEquals( result, base2 );
+	}
+	
+	@Test
+	public void validRangeForBase2()
+	{
+		final Range base1 = new Range( -1.0, 1.0);
+		final Range base2 = new Range( -2.0, 2.0);
+		Range result = Range.combine( base1, base2 );
+		assertEquals( result, base2 );
+	}
+	
+	@Test
+	public void validRangeForBase1()
+	{
+		final Range base1 = new Range( -2.0, 2.0);
+		final Range base2 = new Range( -1.0, 1.0);
 		Range result = Range.combine( base1, base2 );
 		assertEquals( result, base1 );
 	}
