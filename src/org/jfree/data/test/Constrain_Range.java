@@ -77,8 +77,14 @@ public class Constrain_Range {
 		double expected = 1.69e308;
 		System.out.println(expected);
 		System.out.println(result);
-		assertEquals(expected, result,0.0000001d);
+		assertEquals(expected, result,0.0000001d);	
+	}
+	
+	@Test
+	public void testWithContainedValue() {
+		double result = new Range(-1, 1).constrain(2.0);
 		
+		assertEquals(result, 1.0, TestHelpers.EPSILON);
 	}
 	
 

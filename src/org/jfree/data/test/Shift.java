@@ -72,6 +72,31 @@ public class Shift {
 		assertEquals( Double.compare( base.getUpperBound() + delta, result.getUpperBound() ), 0 );
 	}
 	
+	@Test
+	public void shiftRangeOverZeroWithoutZeroCrossing() {
+		Range testRange = new Range(-1, 1);
+		Range shiftedRange = Range.shift(testRange, 2.0);
+		
+		assertEquals(shiftedRange.getLowerBound(), 0.0, TestHelpers.EPSILON);
+		assertEquals(shiftedRange.getUpperBound(), 3.0, TestHelpers.EPSILON);
+	}
+	
+	@Test
+	public void shiftRangeOverZeroWithNegativeOffset() {
+		Range shiftedRange = Range.shift(new Range(-1, 1), -2.0);
+		
+		assertEquals(shiftedRange.getLowerBound(), -3.0, TestHelpers.EPSILON);
+		assertEquals(shiftedRange.getUpperBound(), 0.0, TestHelpers.EPSILON);
+	}
+	
+	@Test
+	public void shiftPositiveRangeOverZero() {
+		Range shiftedRange = Range.shift(new Range(0.5, 1.5), -1.0);
+		
+		assertEquals(shiftedRange.getLowerBound(), 0.0, TestHelpers.EPSILON);
+		assertEquals(shiftedRange.getUpperBound(), 0.5, TestHelpers.EPSILON);
+	}
+	
 	/*
 	@Test
 	public void posRangePosDelta()

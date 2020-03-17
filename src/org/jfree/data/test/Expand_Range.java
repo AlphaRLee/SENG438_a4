@@ -19,6 +19,15 @@ public class Expand_Range {
 		assertEquals(30, r.getUpperBound(), 0.000001);
 	}
 	
+	@Test
+	public void testWithUpperBoundExpansion() {
+		Range testRange = new Range(-1, 1);
+		Range expandedRange = Range.expand(testRange, 0.0, 2.0);
+		
+		assertEquals(-1, expandedRange.getLowerBound(), TestHelpers.EPSILON);
+		assertEquals(5, expandedRange.getUpperBound(), TestHelpers.EPSILON);
+	}
+	
 	@Test(expected = IllegalArgumentException.class)
 	public void testNullInput() {
 		Range range = null;
