@@ -150,7 +150,7 @@ public class GetCumulativePercentages_DataUtilities {
 			}
 		});
 		KeyedValues results = DataUtilities.getCumulativePercentages(values);
-		assertEquals(0.5, results.getValue(0).doubleValue(), 0.0000001);
+		assertEquals("Expected null value to be ignored in calculation", 0.5, results.getValue(0).doubleValue(), 0.0000001);
 	}
 	
 	/**
