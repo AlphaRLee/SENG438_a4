@@ -76,9 +76,7 @@ public class ExpandToInclude_Range {
 		double definedVal = 15;
 		Range definedRange = new Range(15,15);
 		Range testRange = Range.expandToInclude(definedRange, definedVal);
-		Range actualRange = new Range(15,15);
-		assertEquals(testRange.getLength(),actualRange.getLength(),0.0000001d);
-		
+		assertSame("Expected range object to be unchanged", testRange, definedRange);
 	}
 
 	

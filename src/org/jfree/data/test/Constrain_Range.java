@@ -19,13 +19,20 @@ public class Constrain_Range {
 	public void setUp() throws Exception {
 	}
 	
+	// Test for success when value is within range
+	@Test
+	public void inRange() {
+		Range controlBody = new Range(-10, 10);
+		assertEquals(2.0, controlBody.constrain(2.0), 0.0000001);
+	}
+	
 	//Test for success when value is on upper boundary
 	@Test
 	public void correctRangeLarge() {
 		Range controlBody = new Range(1, 6);
 		double result = controlBody.constrain(6);
 		double expected = 6;
-		assertEquals(expected, result,0.0000001d);
+		assertEquals(expected, result, 0.0000001d);
 		
 	}
 	//Tests for success when value is on lower boundary
