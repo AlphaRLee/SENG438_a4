@@ -124,6 +124,36 @@ public class GetCumulativePercentages_DataUtilities {
 	}
 	
 	/**
+	 * Test behavior for keyedValues object with a null value
+	 */
+	@Test
+	public void testBoundaryCaseWithNullValue() {
+		mockingContext.checking(new Expectations() {
+			{
+				atLeast(1).of(values).getItemCount();
+				will(returnValue(3));
+				
+				atLeast(1).of(values).getKey(0);
+				will(returnValue(0));
+				atLeast(1).of(values).getValue(0);
+				will(returnValue(1.0));
+				
+				atLeast(1).of(values).getKey(1);
+				will(returnValue(1));
+				atLeast(1).of(values).getValue(1);
+				will(returnValue(null));
+				
+				atLeast(1).of(values).getKey(2);
+				will(returnValue(2));
+				atLeast(1).of(values).getValue(2);
+				will(returnValue(1.0));
+			}
+		});
+		KeyedValues results = DataUtilities.getCumulativePercentages(values);
+		assertEquals(0.5, results.getValue(0).doubleValue(), 0.0000001);
+	}
+	
+	/**
 	 * Test behaviour for one entry in keyedValues object
 	 */
 	@Test
