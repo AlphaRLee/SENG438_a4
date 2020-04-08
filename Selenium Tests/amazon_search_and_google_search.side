@@ -1,0 +1,179 @@
+{
+  "id": "3cbac104-3085-4265-ac11-9fc06ed70235",
+  "version": "2.0",
+  "name": "a4",
+  "url": "https://www.amazon.ca",
+  "tests": [{
+    "id": "86eb9473-e973-45b0-bd44-78a5e0033c67",
+    "name": "google_search",
+    "commands": [{
+      "id": "d5799488-28d6-415b-ab54-19f588058e15",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82b51f7c-a080-4016-ab6c-a5643ba0a977",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "925x643",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22639853-84af-4fc7-bed7-532b9eba2fc7",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee05616c-db34-43b5-b61f-3c083aa036c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "covid-19"
+    }, {
+      "id": "c2e24358-f9a6-4e5b-a9ab-0a354b447773",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchform",
+      "targets": [
+        ["id=searchform", "id"],
+        ["css=#searchform", "css:finder"],
+        ["xpath=//div[@id='searchform']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div[3]", "xpath:idRelative"],
+        ["xpath=//body/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8478edf1-3820-40fb-aa72-858e65f1227e",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .RNmpXc",
+      "targets": [
+        ["css=center:nth-child(1) > .RNmpXc", "css:finder"],
+        ["xpath=(//input[@name='btnI'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[3]/center/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/center/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "639e023d-5eb4-4de1-a61d-fa2043e8f8c3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@title='Worldometer']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "398ae4ec-7bab-45d5-99d1-05c8dee87a0f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@title='Worldometer']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ba4ec94a-90bd-470c-9e08-17403f0f7e11",
+    "name": "amazon_search",
+    "commands": [{
+      "id": "d95ad901-4fc1-4908-8d6f-38e8271fed65",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a9105a-9db1-441b-bc49-79ac6c7c2a8d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d0b7513-6f33-406b-af07-cd2bf4c52b0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fb2d63-a815-4516-8e2a-2ba5299f99a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "computers"
+    }, {
+      "id": "440dee2c-6c3a-4f00-98e6-293ac4ec3630",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4acc5c0d-18cc-4605-b527-77d7eb451e13",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.a-color-state",
+      "targets": [
+        ["css=.a-color-state", "css:finder"],
+        ["xpath=//div[@id='search']/span/div/span/h1/div/div/div/div/span[3]", "xpath:idRelative"],
+        ["xpath=//div/span[3]", "xpath:position"]
+      ],
+      "value": "\"computers\""
+    }]
+  }],
+  "suites": [{
+    "id": "6031621e-b9fb-466f-9a66-2e31f02e4a42",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.ca/", "https://www.amazon.ca/"],
+  "plugins": []
+}

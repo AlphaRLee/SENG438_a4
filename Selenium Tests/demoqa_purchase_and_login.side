@@ -1,0 +1,174 @@
+{
+  "id": "d2858f90-b610-4df5-ab8c-f77922f82e7b",
+  "version": "2.0",
+  "name": "Assignment4",
+  "url": "http://shop.demoqa.com",
+  "tests": [{
+    "id": "7b544832-904d-4086-b3a6-35f15318995c",
+    "name": "AssertPurchaseFails",
+    "commands": [{
+      "id": "3769e238-cb49-47d9-9987-602970927044",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa217e4-8108-4137-8ab4-f3440d40be76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7c0a546-c984-40c2-b922-e5e46c070fff",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "ToolsQA Demo Site – ToolsQA – Demo E-Commerce Site",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34a58259-556e-4241-8e5f-1d5b4c037d41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.padding-stylebox:nth-child(2) .noo-product-item:nth-child(1) .noo-thumbnail-product:nth-child(1)",
+      "targets": [
+        ["css=.padding-stylebox:nth-child(2) .noo-product-item:nth-child(1) .noo-thumbnail-product:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='noo-site']/div[2]/div[3]/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://shop.demoqa.com/product/pink-drop-shoulder-oversized-t-shirt/']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a914f2c6-4dfb-4877-9e64-df1dbd8dd828",
+      "comment": "",
+      "command": "click",
+      "target": "css=.single_add_to_cart_button",
+      "targets": [
+        ["css=.single_add_to_cart_button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-1497']/div/div[2]/form/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55657529-3208-447e-8aef-99d1fd4389ae",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please select some product options before adding this product to your cart.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f8284204-0ff2-4500-8712-63dc33b95c8d",
+    "name": "AssertLoginFails",
+    "commands": [{
+      "id": "cb297fbb-68bb-4042-aa56-6f39e1645192",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7825e163-f2f4-41ff-bf42-55fc368f0fdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c527e06a-1c40-41e2-b758-04d28493b181",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"],
+        ["css=.pull-right > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='noo-site']/header/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://shop.demoqa.com/my-account/']", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3acc0024-83b1-4576-baa7-428137728eab",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc4f8da6-43b8-49d4-a2cb-2e712e6933b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "FakeUser"
+    }, {
+      "id": "9b832888-e040-4bd2-912b-e5f9e24c4d37",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "12345Password"
+    }, {
+      "id": "5c5027d7-6037-4529-9a92-a55c0265de7f",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.woocommerce-form-login__submit", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='customer_login']/div/form/p[3]/button", "xpath:idRelative"],
+        ["xpath=//p[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e44ac761-4c2b-4a64-a1d8-f67ffe83db70",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.woocommerce-error",
+      "targets": [
+        ["css=.woocommerce-error", "css:finder"],
+        ["xpath=//article[@id='post-8']/div/div/div/ul", "xpath:idRelative"],
+        ["xpath=//article/div/div/div/ul", "xpath:position"],
+        ["xpath=//ul[contains(.,'ERROR: The username or password you entered is incorrect. Lost your password?')]", "xpath:innerText"]
+      ],
+      "value": "ERROR: The username or password you entered is incorrect. Lost your password?"
+    }]
+  }],
+  "suites": [{
+    "id": "9d84f9be-703e-44eb-ac32-3b58b7e530fe",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7b544832-904d-4086-b3a6-35f15318995c"]
+  }],
+  "urls": ["http://shop.demoqa.com/"],
+  "plugins": []
+}

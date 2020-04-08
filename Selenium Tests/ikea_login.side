@@ -1,0 +1,281 @@
+{
+  "id": "0ba123be-96f2-455f-97a7-1ac11093b447",
+  "version": "2.0",
+  "name": "seng438-a4",
+  "url": "https://www.ikea.com/ca/en",
+  "tests": [{
+    "id": "9f554e28-5496-45b0-b554-0e3543716079",
+    "name": "test-login-failure",
+    "commands": [{
+      "id": "c35500ba-883f-4a47-8fde-73494f4fa6cc",
+      "comment": "",
+      "command": "open",
+      "target": "/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7591a387-30a2-4679-8216-8f4a369d8f73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "636x1041",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66d37bb6-dc4e-4918-929a-6412ff841674",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(1) > img",
+      "targets": [
+        ["css=a:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='kitchen']", "xpath:img"],
+        ["xpath=//article[@id='webcaHome']/div/a/img", "xpath:idRelative"],
+        ["xpath=//article/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad571e7-ff81-4f82-afe1-e6899792c528",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=a:nth-child(1) > img",
+      "targets": [
+        ["css=a:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='kitchen']", "xpath:img"],
+        ["xpath=//article[@id='webcaHome']/div/a/img", "xpath:idRelative"],
+        ["xpath=//article/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6339648a-8e40-4943-93f6-bc0c1d1b305c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon path",
+      "targets": [
+        ["css=.js-shopping-cart-icon path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d3cade-dcf8-4cb2-8a71-44d483633fa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.noproducts__text",
+      "targets": [
+        ["css=.noproducts__text", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "537ed7e5-1564-4a98-b87e-4cb1c2dde6a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.\\_Rfxb_:nth-child(2) > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//main[@id='one-checkout']/div[2]/div/div/div[2]/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/profile/login?from=https://order.ikea.com/ca/en/checkout/shoppingbag/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "350870fc-6585-49ef-b84a-f1e007b50e62",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ecc047-4c3f-48a8-b640-2dd3a1c6634d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@nonexistent.domain"
+    }, {
+      "id": "550e0c7c-124e-4a1d-9758-2190ec9f7c3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a215826-22bd-4832-a086-a13d95339767",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "test1234"
+    }, {
+      "id": "8aa681ef-4957-4589-b03b-55148d20be44",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn--filled", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d019d9-85d5-4147-b793-b498059c2797",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn--filled", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "82a9047e-83fb-4502-a90f-83f011a3eada",
+    "name": "test-login-success",
+    "commands": [{
+      "id": "0340d386-a395-40c2-bfc7-6fa28f3a241a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa014f6a-8d92-4136-b2d9-d58a1844cad4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "956x1041",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1d54087-2390-4258-822d-7a54e099ef72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon > .hnf-svg-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon > .hnf-svg-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5a95bb8-ef58-483e-87f0-b0a38bba936f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.\\_Rfxb_:nth-child(2) > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//main[@id='one-checkout']/div[2]/div/div/div[2]/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/profile/login?from=https://order.ikea.com/ca/en/checkout/shoppingbag/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5793beb-7f13-4764-9a22-cbad3a5ec78f",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38f5b3d1-151e-46ca-a73f-181a9d05a722",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "daijanae66@utclubsxu.com"
+    }, {
+      "id": "dfa369aa-e7a1-41f1-b376-4d096a4cb391",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad21c98-261a-4a69-ae3b-17d25cf6836a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Password!@#"
+    }, {
+      "id": "c32c5517-9433-4854-87a1-ac93bca8461d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "548ae3e8-2d8f-4f56-b28d-33fade6d6753",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9f554e28-5496-45b0-b554-0e3543716079"]
+  }],
+  "urls": ["https://www.ikea.com/", "https://www.ikea.com/ca/en"],
+  "plugins": []
+}
